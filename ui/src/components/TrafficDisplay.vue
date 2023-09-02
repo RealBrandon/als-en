@@ -14,7 +14,7 @@
                 </span>
               </n-gi>
               <n-gi>
-                <h3>Transmitted</h3>
+                <h3>Sent</h3>
                 <span class="traffic-display">
                   {{ formatBytes(interfaceData.traffic.send, 2, true) }} /
                   {{ formatBytes(interfaceData.send) }}
@@ -123,12 +123,12 @@ export default defineComponent({
         series: [
           {
             type: "area",
-            name: "Receive",
+            name: "Received",
             data: [],
           },
           {
             type: "area",
-            name: "Send",
+            name: "Sent",
             data: [],
           },
         ],

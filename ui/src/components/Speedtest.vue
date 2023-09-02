@@ -5,7 +5,7 @@
       <n-grid x-gap="12" cols="1 s:1 m:1 l:3" responsive="screen">
         <n-gi span="1 s:1 m:1 l:2">
           <div>
-            <h4>下行</h4>
+            <h4>Download</h4>
             <h1>{{ h5Download }} Mbps</h1>
             <apexchart
               type="area"
@@ -18,7 +18,7 @@
         </n-gi>
         <n-gi span="1">
           <div>
-            <h4>上行</h4>
+            <h4>Upload</h4>
             <h1>{{ h5Upload }} Mbps</h1>
             <apexchart
               type="area"

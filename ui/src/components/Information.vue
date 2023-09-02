@@ -86,14 +86,14 @@ export default defineComponent({
 
           if (data.public_ipv4) {
             this.tableData.push({
-              key: "IPv4 Address",
+              key: "Server IPv4 Address",
               value: data.public_ipv4,
             });
           }
 
           if (data.public_ipv6) {
             this.tableData.push({
-              key: "IPv6 Address",
+              key: "Server IPv6 Address",
               value: data.public_ipv6,
             });
           }
