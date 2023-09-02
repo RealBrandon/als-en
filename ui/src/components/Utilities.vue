@@ -1,7 +1,7 @@
 <template>
   <div>
     <n-card>
-      <template #header> 网络工具 </template>
+      <template #header> Network Utilities </template>
       <n-space>
         <n-button
           v-if="componentConfig.utilities_ping"

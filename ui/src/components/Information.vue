@@ -1,7 +1,7 @@
 <template>
   <div>
     <n-card hoverable>
-      <template #header> 服务器信息 </template>
+      <template #header> Server Information </template>
       <n-table style="max-width: 500px; border: none">
         <tbody>
           <template v-for="data in tableData">
@@ -19,7 +19,7 @@
     </n-card>
 
     <n-card v-if="sponsorMessage.length > 0" hoverable style="margin-top: 10px">
-      <template #header> 节点赞助商消息 </template>
+      <template #header> Sponsor Message </template>
       <div class="sponsor">
         <Markdown :source="sponsorMessage" />
       </div>
@@ -52,7 +52,7 @@ export default defineComponent({
   methods: {
     copySomething(String) {
       toClipboard(String, "copy");
-      window.$message.success("已复制");
+      window.$message.success("Copied to clipboard");
     },
   },
   setup() {
@@ -80,26 +80,26 @@ export default defineComponent({
 
           this.tableData = [];
           this.tableData.push({
-            key: "服务器位置",
+            key: "Server Location",
             value: data.location,
           });
 
           if (data.public_ipv4) {
             this.tableData.push({
-              key: "IPv4 地址",
+              key: "IPv4 Address",
               value: data.public_ipv4,
             });
           }
 
           if (data.public_ipv6) {
             this.tableData.push({
-              key: "IPv6 地址",
+              key: "IPv6 Address",
               value: data.public_ipv6,
             });
           }
 
           this.tableData.push({
-            key: "您当前的 IP 地址",
+            key: "Your IP address",
             value: data.client_ip,
           });
 
