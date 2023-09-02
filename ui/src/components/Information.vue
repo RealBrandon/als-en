@@ -99,7 +99,7 @@ export default defineComponent({
           }
 
           this.tableData.push({
-            key: "Your IP address",
+            key: "Your IP Address",
             value: data.client_ip,
           });
 

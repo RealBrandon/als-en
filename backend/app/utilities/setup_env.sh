@@ -24,6 +24,9 @@ echo '' > /mnt/fakeroot/.bashrc
 echo "alias export='echo \"Insufficient memory\" && false'" >> /mnt/fakeroot/.bashrc
 echo "alias alias='echo \"Insufficient memory\" && false'" >> /mnt/fakeroot/.bashrc
 
+# Set nexttrace to use English as the displaying language
+echo "alias nexttrace='nexttrace --language en'" >> /mnt/fakeroot/.bashrc
+
 # misc
 ln -sf /usr/bin/free /mnt/fakebin/free
 ln -sf /bin/df /mnt/fakebin/df

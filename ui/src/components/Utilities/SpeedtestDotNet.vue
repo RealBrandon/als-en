@@ -51,7 +51,7 @@
           :processing="working"
         />
         <p>
-          Total Progress <span style="float: right">{{ progress.full }}%</span>
+          Overall Progress <span style="float: right">{{ progress.full }}%</span>
         </p>
         <n-progress
           type="line"
