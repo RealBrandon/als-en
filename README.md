@@ -3,11 +3,15 @@
 
 Language: English | [简体中文](README_zh_CN.md)
 
-# ALS - Another Looking-glass Server
+# ALS-EN - Another Looking-glass Server with English Localisation
+
+## Notice
+This project is a fork of [ALS](https://github.com/wikihost-opensource/als).
 
 ## Quick start
 ```
-docker run -d --name looking-glass --restart always --network host wikihostinc/looking-glass-server
+docker build -t als-en https://github.com/RealBrandon/als-en.git
+docker run -d --name looking-glass --restart always --network host als-en
 ```
 
 [DEMO](http://lg.hk1-bgp.hkg.50network.com/)
@@ -59,6 +63,8 @@ docker run -d \
 - [x] Online shell box (limited commands)
 - [x] [NextTrace](https://github.com/nxtrace/NTrace-core) Support
 ## Thanks to
+https://github.com/wikihost-opensource/als
+
 https://github.com/librespeed/speedtest
 
 https://www.jetbrains.com/
