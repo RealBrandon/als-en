@@ -21,11 +21,11 @@ echo -en '#!/bin/bash\nARG="${@: -1}"\n/bin/ping $ARG\n' > /mnt/fakebin/ping
 chmod +x /mnt/fakebin/*
 
 echo '' > /mnt/fakeroot/.bashrc
-echo "alias export='echo \"Insufficient memory\" && false'" >> /mnt/fakeroot/.bashrc
-echo "alias alias='echo \"Insufficient memory\" && false'" >> /mnt/fakeroot/.bashrc
 
 # Set nexttrace to use English as the displaying language
 echo "alias nexttrace='nexttrace --language en'" >> /mnt/fakeroot/.bashrc
+echo "alias export='echo \"Insufficient memory\" && false'" >> /mnt/fakeroot/.bashrc
+echo "alias alias='echo \"Insufficient memory\" && false'" >> /mnt/fakeroot/.bashrc
 
 # misc
 ln -sf /usr/bin/free /mnt/fakebin/free
