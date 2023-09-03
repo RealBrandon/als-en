@@ -250,7 +250,7 @@ export default defineComponent({
         series: [
           {
             type: "area",
-            name: "Receive",
+            name: "Download",
             data: [],
           },
         ],
@@ -305,7 +305,7 @@ export default defineComponent({
         series: [
           {
             type: "area",
-            name: "Receive",
+            name: "Upload",
             data: [],
           },
         ],
