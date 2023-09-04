@@ -86,7 +86,7 @@ if (!function_exists('_wget')) {
 }
 
 if (!function_exists('geo_lookup_ip')) {
-    function geo_lookup_ip($ip, $language = 'zh-CN')
+    function geo_lookup_ip($ip, $language = 'en-GB')
     {
         /** @var MaxMind\Db\Reader $reader */
         global $reader;
