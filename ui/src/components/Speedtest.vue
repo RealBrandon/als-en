@@ -191,6 +191,11 @@ export default defineComponent({
       }, 200);
       // this.h5SpeedtestWorking = !this.h5SpeedtestWorking
     },
+    
+    getHalfWidth() {
+      var size = this.$refs.nGrid.$el.clientWidth;
+      return size;
+    },
   },
   data() {
     return {
