@@ -16,7 +16,7 @@
             </apexchart>
           </div>
         </n-gi>
-        <n-gi span="1">
+        <n-gi span="1 s:1 m:1 l:2">
           <div>
             <h4>Upload</h4>
             <h1>{{ h5Upload }} Mbps</h1>
@@ -190,11 +190,6 @@ export default defineComponent({
         this.h5SpeedWorker.postMessage("status");
       }, 200);
       // this.h5SpeedtestWorking = !this.h5SpeedtestWorking
-    },
-    
-    getHalfWidth() {
-      var size = this.$refs.nGrid.$el.clientWidth;
-      return size;
     },
   },
   data() {
