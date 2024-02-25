@@ -21,14 +21,14 @@ export const list = [
 
 const locales = list.map((x) => x.value)
 const i18n = createI18n({
-  locale: locales[0],
+  locale: locales[1],
   legacy: false
 })
 
 // copy from https://vue-i18n.intlify.dev/guide/advanced/lazy.html
 export function setupI18n() {
-  loadLocaleMessages(locales[0])
-  setI18nLanguage(locales[0])
+  loadLocaleMessages(locales[1])
+  setI18nLanguage(locales[1])
 
   return i18n
 }
